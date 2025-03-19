@@ -116,8 +116,8 @@
           "required": true,
           "visible": true,
           "editable": true,
-          "tooltip": "Specify the User ID of the guest user whose details you want to retrieve from Cisco ISE. Note: You can find out the guest User ID by using the 'List Guest Users' action.",
-          "description": "Specify the User ID of the guest user whose details you want to retrieve from Cisco ISE. Note: You can find out the guest User ID by using the 'List Guest Users' action."
+          "tooltip": "Specify the User ID of the internal user whose details you want to retrieve from Cisco ISE. Note: You can find out the internal User ID by using the 'List Internal Users' action.",
+          "description": "Specify the User ID of the internal user whose details you want to retrieve from Cisco ISE. Note: You can find out the internal User ID by using the 'List Internal Users' action."
         }
       ]
     },
