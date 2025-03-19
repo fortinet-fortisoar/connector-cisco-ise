@@ -9,7 +9,7 @@
   "icon_large_name": "Cisco_ISE_80X80.png",
   "cs_approved": false,
   "cs_compatible": true,
-  "help_online": "",
+  "help_online": "https://docs.fortinet.com/document/fortisoar/2.1.1/cisco-ise/1014/cisco-ise-v2-1-1",
   "configuration": {
     "fields": [
       {
@@ -51,7 +51,7 @@
       },
       {
         "title": "Verify SSL",
-        "description": "Specifies whether the SSL certificate for the server is to be verified or not.",
+        "description": "Specifies whether the SSL certificate for the server is to be verified. By default, this option is selected, i.e., set to true.",
         "type": "checkbox",
         "name": "verify",
         "required": false,
@@ -106,7 +106,7 @@
         }
       },
       "title": "Get Internal User Details",
-      "description": "Retrieves details of an internal user fromCisco ISE based on the user ID you have specified.",
+      "description": "Retrieves details of an internal user from Cisco ISE based on the user ID you have specified.",
       "enabled": true,
       "parameters": [
         {
@@ -116,8 +116,8 @@
           "required": true,
           "visible": true,
           "editable": true,
-          "tooltip": "User ID can be found via List Internal Users action",
-          "description": "Specify the User ID of the internal user whose details you want to retrieve from Cisco ISE. Note: You can find out the internal User ID by using the 'List Internal Users' action."
+          "tooltip": "Specify the User ID of the guest user whose details you want to retrieve from Cisco ISE. Note: You can find out the guest User ID by using the 'List Guest Users' action.",
+          "description": "Specify the User ID of the guest user whose details you want to retrieve from Cisco ISE. Note: You can find out the guest User ID by using the 'List Guest Users' action."
         }
       ]
     },
@@ -136,7 +136,8 @@
           "required": false,
           "visible": true,
           "editable": true,
-          "description": "Specify the username of the internal user whose details you want to retrieve from Cisco ISE."
+          "description": "(Optional) Specify the username of the internal user whose details you want to retrieve from Cisco ISE.",
+          "tooltip": "Specify the username of the internal user whose details you want to retrieve from Cisco ISE."
         },
         {
           "title": "First Name",
@@ -145,7 +146,8 @@
           "required": false,
           "visible": true,
           "editable": true,
-          "description": "Specify the first name of the internal user whose details you want to retrieve from Cisco ISE."
+          "description": "(Optional) Specify the first name of the internal user whose details you want to retrieve from Cisco ISE.",
+          "tooltip": "Specify the first name of the internal user whose details you want to retrieve from Cisco ISE."
         },
         {
           "title": "Last Name",
@@ -154,7 +156,8 @@
           "required": false,
           "visible": true,
           "editable": true,
-          "description": "Specify the last name of the internal user whose details you want to retrieve from Cisco ISE."
+          "description": "(Optional) Specify the last name of the internal user whose details you want to retrieve from Cisco ISE.",
+          "tooltip": "Specify the last name of the internal user whose details you want to retrieve from Cisco ISE."
         },
         {
           "title": "Email Address",
@@ -163,7 +166,8 @@
           "required": false,
           "visible": true,
           "editable": true,
-          "description": "Specify the email address of the internal user whose details you want to retrieve from Cisco ISE."
+          "description": "(Optional) Specify the email address of the internal user whose details you want to retrieve from Cisco ISE.",
+          "tooltip": "Specify the email address of the internal user whose details you want to retrieve from Cisco ISE."
         },
         {
           "title": "Size",
@@ -172,7 +176,8 @@
           "required": false,
           "visible": true,
           "editable": true,
-          "description": "Specify the number of results that the operation should include per page."
+          "description": "(Optional) Specify the number of results that the operation should include per page.",
+          "tooltip": "Specify the number of results that the operation should include per page."
         },
         {
           "title": "Page",
@@ -181,7 +186,8 @@
           "required": false,
           "visible": true,
           "editable": true,
-          "description": "Specify the page number from which you want to retrieve results."
+          "description": "(Optional) Specify the page number from which you want to retrieve results.",
+          "tooltip": "Specify the page number from which you want to retrieve results."
         }
       ],
       "output_schema": {
@@ -232,7 +238,8 @@
           "required": true,
           "visible": true,
           "editable": true,
-          "description": "Specify the username of an internal user whose status you want to set as 'Disabled'."
+          "description": "Specify the username of an internal user whose status you want to set as 'Disabled'.",
+          "tooltip": "Specify the username of an internal user whose status you want to set as 'Disabled'."
         }
       ]
     },
@@ -262,7 +269,8 @@
           "required": true,
           "visible": true,
           "editable": true,
-          "description": "Specify the username of an internal user whose status you want to set as 'Enabled'."
+          "description": "Specify the username of an internal user whose status you want to set as 'Enabled'.",
+          "tooltip": "Specify the username of an internal user whose status you want to set as 'Enabled'."
         }
       ]
     },
@@ -281,7 +289,8 @@
           "required": false,
           "visible": true,
           "editable": true,
-          "description": "Specify the username of the guest user whose details you want to retrieve from Cisco ISE."
+          "description": "(Optional) Specify the username of the guest user whose details you want to retrieve from Cisco ISE.",
+          "tooltip": "Specify the username of the guest user whose details you want to retrieve from Cisco ISE."
         },
         {
           "title": "First Name",
@@ -290,7 +299,8 @@
           "required": false,
           "visible": true,
           "editable": true,
-          "description": "Specify the first name of the guest user whose details you want to retrieve from Cisco ISE."
+          "description": "(Optional) Specify the first name of the guest user whose details you want to retrieve from Cisco ISE.",
+          "tooltip": "Specify the first name of the guest user whose details you want to retrieve from Cisco ISE."
         },
         {
           "title": "Last Name",
@@ -299,7 +309,8 @@
           "required": false,
           "visible": true,
           "editable": true,
-          "description": "Specify the last name of the guest user whose details you want to retrieve from Cisco ISE."
+          "description": "(Optional) Specify the last name of the guest user whose details you want to retrieve from Cisco ISE.",
+          "tooltip": "Specify the last name of the guest user whose details you want to retrieve from Cisco ISE."
         },
         {
           "title": "Email Address",
@@ -308,7 +319,8 @@
           "required": false,
           "visible": true,
           "editable": true,
-          "description": "Specify the email of the guest user whose details you want to retrieve from Cisco ISE."
+          "description": "(Optional) Specify the email of the guest user whose details you want to retrieve from Cisco ISE.",
+          "tooltip": "Specify the email of the guest user whose details you want to retrieve from Cisco ISE."
         },
         {
           "title": "Sponsor Username",
@@ -317,8 +329,8 @@
           "required": false,
           "visible": true,
           "editable": true,
-          "tooltip": "Username for the sponsor of the guest account",
-          "description": "Specify the username for the sponsor of the guest account whose details you want to retrieve from Cisco ISE."
+          "tooltip": "Specify the username for the sponsor of the guest account whose details you want to retrieve from Cisco ISE.",
+          "description": "(Optional) Specify the username for the sponsor of the guest account whose details you want to retrieve from Cisco ISE."
         },
         {
           "title": "Company",
@@ -327,7 +339,8 @@
           "required": false,
           "visible": true,
           "editable": true,
-          "description": "Specify the company of the guest user whose details you want to retrieve from Cisco ISE."
+          "description": "(Optional) Specify the company of the guest user whose details you want to retrieve from Cisco ISE.",
+          "tooltip": "Specify the company of the guest user whose details you want to retrieve from Cisco ISE."
         },
         {
           "title": "Phone Number",
@@ -336,8 +349,8 @@
           "required": false,
           "visible": true,
           "editable": true,
-          "tooltip": "Phone number should be E.164 format, exp: +13211239034",
-          "description": "Specify the phone number of the guest user whose details you want to retrieve from Cisco ISE. Note: ThePhone number should be E.164 format, exp: +13211239034"
+          "tooltip": "Specify the phone number of the guest user whose details you want to retrieve from Cisco ISE. Note: ThePhone number should be E.164 format, exp: +13211239034",
+          "description": "(Optional) Specify the phone number of the guest user whose details you want to retrieve from Cisco ISE. Note: ThePhone number should be E.164 format, exp: +13211239034"
         },
         {
           "title": "Size",
@@ -346,7 +359,8 @@
           "required": false,
           "visible": true,
           "editable": true,
-          "description": "Specify the number of results that the operation should include per page."
+          "description": "(Optional) Specify the number of results that the operation should include per page.",
+          "tooltip": "Specify the number of results that the operation should include per page."
         },
         {
           "title": "Page",
@@ -355,7 +369,8 @@
           "required": false,
           "visible": true,
           "editable": true,
-          "description": "Specify the page number from which you want to retrieve results. Page numbering starts on page 1."
+          "description": "(Optional) Specify the page number from which you want to retrieve results. Page numbering starts on page 1.",
+          "tooltip": "Specify the page number from which you want to retrieve results. Page numbering starts on page 1."
         }
       ],
       "output_schema": {
@@ -424,7 +439,7 @@
           "required": true,
           "visible": true,
           "editable": true,
-          "tooltip": "User ID can be found via List Guest Users action",
+          "tooltip": "Specify the User ID of the guest user whose details you want to retrieve from Cisco ISE. Note: You can find out the guest User ID by using the 'List Guest Users' action.",
           "description": "Specify the User ID of the guest user whose details you want to retrieve from Cisco ISE. Note: You can find out the guest User ID by using the 'List Guest Users' action."
         }
       ]
@@ -445,7 +460,8 @@
           "required": true,
           "visible": true,
           "editable": true,
-          "description": "Specify the username of the guest user who you want to suspend from Cisco ISE"
+          "description": "Specify the username of the guest user who you want to suspend from Cisco ISE",
+          "tooltip": "Specify the username of the guest user who you want to suspend from Cisco ISE"
         }
       ]
     },
@@ -465,7 +481,8 @@
           "required": true,
           "visible": true,
           "editable": true,
-          "description": "Specify the username of the guest user who you want to reinstate in Cisco ISE"
+          "description": "Specify the username of the guest user who you want to reinstate in Cisco ISE",
+          "tooltip": "Specify the username of the guest user who you want to reinstate in Cisco ISE"
         }
       ]
     },
@@ -488,7 +505,7 @@
           "visible": true,
           "editable": true,
           "required": true,
-          "tooltip": "IP Address to quarantine",
+          "tooltip": "Specify the IP address of the device that you want to quarantine in Cisco ISE.",
           "description": "Specify the IP address of the device that you want to quarantine in Cisco ISE."
         }
       ]
@@ -512,7 +529,7 @@
           "visible": true,
           "editable": true,
           "required": true,
-          "tooltip": "MAC Address to quarantine",
+          "tooltip": "Specify the MAC address of the device that you want to quarantine on Cisco ISE.",
           "description": "Specify the MAC address of the device that you want to quarantine on Cisco ISE."
         }
       ]
@@ -536,7 +553,7 @@
           "visible": true,
           "editable": true,
           "required": true,
-          "tooltip": "IP Address to un-quarantine",
+          "tooltip": "Specify the IP address of the device that you want to un-quarantine on Cisco ISE.",
           "description": "Specify the IP address of the device that you want to un-quarantine on Cisco ISE."
         }
       ]
@@ -560,7 +577,7 @@
           "visible": true,
           "editable": true,
           "required": true,
-          "tooltip": "MAC Address to un-quarantine",
+          "tooltip": "Specify the MAC address of the device you want to un-quarantine on Cisco ISE.",
           "description": "Specify the MAC address of the device you want to un-quarantine on Cisco ISE."
         }
       ]
@@ -580,8 +597,8 @@
           "visible": true,
           "editable": true,
           "required": true,
-          "tooltip": "MAC Address to end session",
-          "description": "MAC address to end the session on Cisco ISE."
+          "tooltip": "Specify the MAC address to end the session on Cisco ISE.",
+          "description": "Specify the MAC address to end the session on Cisco ISE."
         }
       ],
       "output_schema": {
@@ -608,7 +625,7 @@
           "visible": true,
           "editable": true,
           "required": true,
-          "tooltip": "MAC Address to log out",
+          "tooltip": "Specify the MAC address of the device that you want to log out from Cisco ISE.",
           "description": "Specify the MAC address of the device that you want to log out from Cisco ISE."
         },
         {
@@ -618,7 +635,7 @@
           "visible": true,
           "editable": true,
           "required": true,
-          "tooltip": "Server to log out target machine",
+          "tooltip": "Specify the server address from which you want to log out the specified target machine.",
           "description": "Specify the server address from which you want to log out the specified target machine."
         }
       ]
@@ -666,12 +683,13 @@
               }
             ]
           },
-          "description": "Choose the method using which you want to retrieve endpoint details from Cisco ISE. You can choose between Endpoint ID or Endpoint Name. If you choose 'Endpoint ID', then you must specify the following parameter: Endpoint ID: ID of the ANC endpoint whose details you want to retrieve from Cisco ISE. If you choose 'Endpoint Name', then you must specify the following parameter: Endpoint Name: Name of the ANC endpoint whose details you want to retrieve from Cisco ISE."
+          "description": "(Optional) Choose the method using which you want to retrieve endpoint details from Cisco ISE. You can choose between Endpoint ID or Endpoint Name. If you choose 'Endpoint ID', then you must specify the following parameter: Endpoint ID: ID of the ANC endpoint whose details you want to retrieve from Cisco ISE. If you choose 'Endpoint Name', then you must specify the following parameter: Endpoint Name: Name of the ANC endpoint whose details you want to retrieve from Cisco ISE. If you choose 'Endpoint ID' Endpoint ID: ANC endpoint ID based on which you want to retrieve details from Cisco ISE. If you choose 'Endpoint Name' Endpoint Name: ANC endpoint name based on which you want to retrieve details from Cisco ISE.",
+          "tooltip": "Choose the method using which you want to retrieve endpoint details from Cisco ISE. You can choose between Endpoint ID or Endpoint Name."
         },
         {
           "title": "Size",
-          "tooltip": "The number of results to return for on each page",
-          "description": "Specify the number of results that the operation should include per page. The search result is by default paged to 20 results per page.",
+          "tooltip": "Specify the number of results that the operation should include per page. The search result is by default paged to 20 results per page.",
+          "description": "(Optional) Specify the number of results that the operation should include per page. The search result is by default paged to 20 results per page.",
           "required": false,
           "editable": true,
           "visible": true,
@@ -680,8 +698,8 @@
         },
         {
           "title": "Page",
-          "tooltip": "The page number of results to return",
-          "description": "Specify the page number from which you want to retrieve results. Page numbering starts on page 1.",
+          "tooltip": "Specify the page number from which you want to retrieve results. Page numbering starts on page 1.",
+          "description": "(Optional) Specify the page number from which you want to retrieve results. Page numbering starts on page 1.",
           "required": false,
           "editable": true,
           "visible": true,
@@ -749,13 +767,13 @@
           "visible": true,
           "editable": true,
           "type": "text",
-          "tooltip": "ANC endpoint ID which you want to retrieve details",
-          "description": "Specify the ID of the ANC endpoint whose details you want to retrieve from Cisco ISE."
+          "tooltip": "Specify the ID of the ANC endpoint whose details you want to retrieve from Cisco ISE.",
+          "description": "(Optional) Specify the ID of the ANC endpoint whose details you want to retrieve from Cisco ISE."
         },
         {
           "title": "Size",
-          "tooltip": "The number of results to return for on each page",
-          "description": "Specify the number of results that the operation should include per page. The search result is by default paged to 20 resources per page.",
+          "tooltip": "Specify the number of results that the operation should include per page. The search result is by default paged to 20 resources per page.",
+          "description": "(Optional) Specify the number of results that the operation should include per page. The search result is by default paged to 20 resources per page.",
           "required": false,
           "editable": true,
           "visible": true,
@@ -764,8 +782,8 @@
         },
         {
           "title": "Page",
-          "tooltip": "The page number of results to return",
-          "description": "Specify the page number from which you want to retrieve results. Page numbering starts on page 1.",
+          "tooltip": "Specify the page number from which you want to retrieve results. Page numbering starts on page 1.",
+          "description": "(Optional) Specify the page number from which you want to retrieve results. Page numbering starts on page 1.",
           "required": false,
           "editable": true,
           "visible": true,
@@ -824,7 +842,7 @@
           "visible": true,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify Policy Name which you want to apply on the MAC address or IP Address.",
+          "tooltip": "Specify the name of the policy that you want to create on Cisco ISE.",
           "description": "Specify the name of the policy that you want to create on Cisco ISE."
         },
         {
@@ -839,7 +857,8 @@
             "PORTBOUNCE",
             "SHUTDOWN"
           ],
-          "description": "Select the type of actions to be applied to the ANC policy that you want to create on Cisco ISE. You can choose from the following options: Quarantine, Portbounce, or Shutdown."
+          "description": "Select the type of actions to be applied to the ANC policy that you want to create on Cisco ISE. You can choose from the following options: Quarantine, Portbounce, or Shutdown.",
+          "tooltip": "Select the type of actions to be applied to the ANC policy that you want to create on Cisco ISE. You can choose from the following options: Quarantine, Portbounce, or Shutdown."
         }
       ],
       "output_schema": {
@@ -890,12 +909,13 @@
               }
             ]
           },
-          "description": "Choose the method using which you want to retrieve ANC Policies from Cisco ISE. You can choose between Policy ID or Policy Name. If you choose 'Policy ID', then you must specify the following parameter: Policy ID: ID of the ANC policy whose details you want to retrieve from Cisco ISE. If you choose 'Policy Name', then you must specify the following parameter: Policy Name: Name of the ANC policy whose details you want to retrieve from Cisco ISE."
+          "description": "(Optional) Choose the method using which you want to retrieve ANC Policies from Cisco ISE. You can choose between Policy ID or Policy Name. If you choose 'Policy ID', then you must specify the following parameter: Policy ID: ID of the ANC policy whose details you want to retrieve from Cisco ISE. If you choose 'Policy Name', then you must specify the following parameter: Policy Name: Name of the ANC policy whose details you want to retrieve from Cisco ISE. If you choose 'Policy ID' Policy ID: Policy ID based on which you want to retrieve details from Cisco ISE. If you choose 'Policy Name' Policy Name: Policy name based on which you want to retrieve details from Cisco ISE.",
+          "tooltip": "Choose the method using which you want to retrieve ANC Policies from Cisco ISE. You can choose between Policy ID or Policy Name."
         },
         {
           "title": "Size",
-          "tooltip": "The number of results to return for on each page",
-          "description": "Specify the number of results that the operation should include per page. The search result is by default paged to 20 resources per page.",
+          "tooltip": "Specify the number of results that the operation should include per page. The search result is by default paged to 20 resources per page.",
+          "description": "(Optional) Specify the number of results that the operation should include per page. The search result is by default paged to 20 resources per page.",
           "required": false,
           "editable": true,
           "visible": true,
@@ -904,8 +924,8 @@
         },
         {
           "title": "Page",
-          "tooltip": "The page number of results to return",
-          "description": "Specify the page number from which you want to retrieve results. Page numbering starts on page 1.",
+          "tooltip": "Specify the page number from which you want to retrieve results. Page numbering starts on page 1.",
+          "description": "(Optional) Specify the page number from which you want to retrieve results. Page numbering starts on page 1.",
           "required": false,
           "editable": true,
           "visible": true,
@@ -965,7 +985,7 @@
           "visible": true,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify Policy Name which you want to apply on the MAC address or IP Address.",
+          "tooltip": "Specify the name of the ANC policy that you want to apply to a specific MAC or IP address on Cisco ISE.",
           "description": "Specify the name of the ANC policy that you want to apply to a specific MAC or IP address on Cisco ISE."
         },
         {
@@ -1005,7 +1025,8 @@
               }
             ]
           },
-          "description": "Choose whether you want to apply the specific ANC policy to a Mac Address or an IP address. If you choose 'IP Address', then you must specify the following parameter: IP Address: IP Address on which you want to apply the specified policy. If you choose 'MAC Address', then you must specify the following parameter: MAC Address: MAC Address on which you want to apply the specified policy."
+          "description": "Choose whether you want to apply the specific ANC policy to a Mac Address or an IP address. If you choose 'IP Address', then you must specify the following parameter: IP Address: IP Address on which you want to apply the specified policy. If you choose 'MAC Address', then you must specify the following parameter: MAC Address: MAC Address on which you want to apply the specified policy. If you choose 'MAC Address' MAC Address: Specify MAC Address on which you want to apply policy. If you choose 'IP Address' IP Address: Specify IP Address on which you want to apply policy.",
+          "tooltip": "Choose whether you want to apply the specific ANC policy to a Mac Address or an IP address."
         }
       ],
       "output_schema": {
@@ -1028,7 +1049,7 @@
           "visible": true,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify Policy Name which you want to revoke from the MAC address or IP Address.",
+          "tooltip": "Specify the name of the ANC policy that you want to revoke from a specific MAC or IP address on Cisco ISE.",
           "description": "Specify the name of the ANC policy that you want to revoke from a specific MAC or IP address on Cisco ISE."
         },
         {
@@ -1066,7 +1087,8 @@
               }
             ]
           },
-          "description": "Choose whether you want to revoke the specific ANC policy from a Mac Address or an IP address. If you choose 'IP Address', then you must specify the following parameter: IP Address: IP Address from which you want to revoke the specified policy. If you choose 'MAC Address', then you must specify the following parameter: MAC Address: MAC Address from which you want to revoke the specified policy."
+          "description": "Choose whether you want to revoke the specific ANC policy from a Mac Address or an IP address. If you choose 'IP Address', then you must specify the following parameter: IP Address: IP Address from which you want to revoke the specified policy. If you choose 'MAC Address', then you must specify the following parameter: MAC Address: MAC Address from which you want to revoke the specified policy. If you choose 'MAC Address' MAC Address: Specify MAC Address which you want to revoke policy. If you choose 'IP Address' IP Address: Specify IP Address which you want to revoke policy.",
+          "tooltip": "Choose whether you want to revoke the specific ANC policy from a Mac Address or an IP address."
         }
       ],
       "output_schema": {
